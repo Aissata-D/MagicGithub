@@ -10,7 +10,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class UserRepository {
 
-    private final ApiService apiService; // TODO: A utiliser == > UTILISER
+    private final ApiService apiService; // TODO: A utiliser == > UTILISÉ
 
     public UserRepository(ApiService apiService) {
         this.apiService = apiService;
@@ -18,21 +18,16 @@ public class UserRepository {
 
     public List<User> getUsers() {
         // TODO: A modifier ==> MODIFIÉ
-        //code AISSATA
-
         return apiService.getUsers();
     }
 
     public void generateRandomUser() {
         // TODO: A modifier==> MODIFIÉ
-        //code AISSATA
-
-      apiService.generateRandomUser();
+        apiService.generateRandomUser();
     }
 
     public void deleteUser(User user) {
         // TODO: A modifier==> MODIFIÉ
-        //code AISSATA
         apiService.deleteUser(user);
     }
 }
